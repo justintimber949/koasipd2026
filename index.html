@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0F172A">
+  <meta name="description" content="Shortcut harian Koas IPD - handover, KONRU, template chat DPJP, jadwal jaga, dan catatan pribadi.">
+  <title>Koas IPD Helper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">+</span>
+        <span class="brand-name">Koas IPD Helper</span>
+      </div>
+      <div class="search-wrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          type="search"
+          id="globalSearch"
+          class="search-input"
+          placeholder="Cari DPJP, link, template..."
+          autocomplete="off"
+          aria-label="Pencarian global"
+        >
+        <button id="clearSearch" class="clear-search" aria-label="Hapus pencarian" hidden>×</button>
+      </div>
+    </div>
+    <nav class="tab-nav" role="tablist" aria-label="Kategori konten">
+      <button class="tab-btn active" data-tab="favorit" role="tab" aria-selected="true">Favorit</button>
+      <button class="tab-btn" data-tab="link" role="tab" aria-selected="false">Link</button>
+      <button class="tab-btn" data-tab="template" role="tab" aria-selected="false">Template</button>
+      <button class="tab-btn" data-tab="jadwal" role="tab" aria-selected="false">Jadwal</button>
+      <button class="tab-btn" data-tab="info" role="tab" aria-selected="false">Info Stase</button>
+      <button class="tab-btn" data-tab="catatan" role="tab" aria-selected="false">Catatan</button>
+      <button class="tab-btn" data-tab="profil" role="tab" aria-selected="false">Profil</button>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="app-main">
+    <!-- Favorit tab (default) -->
+    <section class="tab-content active" id="tab-favorit" role="tabpanel">
+      <div class="tab-header">
+        <h2 class="tab-title">Favorit</h2>
+        <p class="tab-subtitle">Link & template yang kamu simpan. Klik ikon bintang di mana pun untuk menambahkan.</p>
+      </div>
+      <div class="favorit-tab-list" id="favoritTabList"></div>
+    </section>
+
+    <!-- Link tab (gabungan Handover + KONRU + Ruangan) -->
+    <section class="tab-content" id="tab-link" role="tabpanel" hidden>
+      <div class="tab-header">
+        <h2 class="tab-title">Link Ruangan &amp; Handover</h2>
+        <p class="tab-subtitle">SOP KONRU, handover, dan spreadsheets pasien per ruangan.</p>
+      </div>
+      <div id="linkContent">
+        <div class="loading">Memuat data...</div>
+      </div>
+    </section>
+
+    <!-- Template tab -->
+    <section class="tab-content" id="tab-template" role="tabpanel" hidden>
+      <div class="tab-header">
+        <h2 class="tab-title">Template Chat DPJP</h2>
+        <p class="tab-subtitle">Template per DPJP + template umum per area. Klik tombol salin untuk copy ke clipboard.</p>
+      </div>
+      <div class="filter-chips" id="templateFilters" role="group" aria-label="Filter skenario template"></div>
+      <div class="dpjp-list" id="dpjpList">
+        <div class="loading">Memuat data...</div>
+      </div>
+    </section>
+
+    <!-- Jadwal tab -->
+    <section class="tab-content" id="tab-jadwal" role="tabpanel" hidden>
+      <div class="tab-header">
+        <h2 class="tab-title">Jadwal</h2>
+        <p class="tab-subtitle">Jadwal jaga, stase, dan chat dosen (gambar).</p>
+      </div>
+      <div class="segmented" id="jadwalSegmented" role="group" aria-label="Jenis jadwal">
+        <button class="seg-btn active" data-jadwal="jaga">Jaga</button>
+        <button class="seg-btn" data-jadwal="stase">Stase</button>
+        <button class="seg-btn" data-jadwal="chatDosen">Chat Dosen</button>
+      </div>
+      <div class="jadwal-content" id="jadwalContent">
+        <div class="loading">Memuat data...</div>
+      </div>
+    </section>
+
+    <!-- Info Stase tab -->
+    <section class="tab-content" id="tab-info" role="tabpanel" hidden>
+      <div class="tab-header">
+        <h2 class="tab-title">Info Stase IPD</h2>
+        <p class="tab-subtitle">Aturan, jam, kontak, dan syarat kelulusan selama stase.</p>
+      </div>
+      <div class="info-content" id="infoContent">
+        <div class="loading">Memuat data...</div>
+      </div>
+    </section>
+
+    <!-- Catatan tab -->
+    <section class="tab-content" id="tab-catatan" role="tabpanel" hidden>
+      <div class="tab-header">
+        <h2 class="tab-title">Catatan Pribadi</h2>
+        <p class="tab-subtitle">Catatan tersimpan di browser (localStorage). Tidak diupload ke server.</p>
+      </div>
+      <button class="btn-primary" id="addNoteBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+        Tambah Catatan
+      </button>
+      <div class="notes-list" id="notesList"></div>
+    </section>
+
+    <!-- Profil tab -->
+    <section class="tab-content" id="tab-profil" role="tabpanel" hidden>
+      <div class="tab-header">
+        <h2 class="tab-title">Profil Koas</h2>
+        <p class="tab-subtitle">Data ini akan otomatis terisi di template chat saat disalin. Tersimpan di browser saja.</p>
+      </div>
+      <div class="profil-card">
+        <form id="profilForm" class="modal-form">
+          <label class="form-label" for="profilNama">Nama Lengkap</label>
+          <input type="text" id="profilNama" class="form-input" placeholder="Misal: Ahmad Taufiqurrohman" maxlength="80" autocomplete="name">
+          <p class="form-hint">Akan menggantikan <code>[NAMA_KOAS]</code> di template.</p>
+
+          <label class="form-label" for="profilPanggilan">Panggilan</label>
+          <input type="text" id="profilPanggilan" class="form-input" placeholder="Misal: Taufiq" maxlength="40">
+          <p class="form-hint">Akan menggantikan <code>[PANGGILAN]</code> di template.</p>
+
+          <div class="modal-actions">
+            <button type="button" class="btn-ghost" id="profilClear">Hapus</button>
+            <button type="submit" class="btn-primary">Simpan Profil</button>
+          </div>
+        </form>
+        <div class="profil-info" id="profilInfo" hidden>
+          <p class="profil-info-title">Profil tersimpan:</p>
+          <p class="profil-info-value"><strong>Nama:</strong> <span id="profilInfoNama">—</span></p>
+          <p class="profil-info-value"><strong>Panggilan:</strong> <span id="profilInfoPanggilan">—</span></p>
+          <p class="profil-info-note">Saat klik tombol Salin di template, <code>[NAMA_KOAS]</code> dan <code>[PANGGILAN]</code> akan otomatis diganti.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom navigation (mobile) -->
+  <nav class="bottom-nav" aria-label="Aksi cepat">
+    <button class="bottom-btn" id="bottomFavorit" aria-label="Lihat favorit">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+      </svg>
+      <span>Favorit</span>
+    </button>
+    <button class="bottom-btn" id="bottomCatatan" aria-label="Buka catatan">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="9" y1="13" x2="15" y2="13"></line>
+        <line x1="9" y1="17" x2="13" y2="17"></line>
+      </svg>
+      <span>Catatan</span>
+    </button>
+  </nav>
+
+  <!-- Password gate -->
+  <div class="auth-overlay" id="authOverlay" hidden>
+    <div class="auth-card">
+      <div class="auth-icon" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+      </div>
+      <h2 class="auth-title">Koas IPD Helper</h2>
+      <p class="auth-subtitle">Masukkan kode akses untuk lanjut</p>
+      <form id="authForm" class="auth-form">
+        <input type="password" id="authPassword" class="auth-input" placeholder="Kode akses" autocomplete="off" autofocus>
+        <p class="auth-error" id="authError" hidden>Kode salah, coba lagi</p>
+        <button type="submit" class="btn-primary auth-submit">Masuk</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Note modal -->
+  <div class="modal-overlay" id="noteModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="noteModalTitle">
+      <h3 class="modal-title" id="noteModalTitle">Tambah Catatan</h3>
+      <form id="noteForm" class="modal-form">
+        <input type="hidden" id="noteId">
+        <label class="form-label" for="noteTitle">Judul</label>
+        <input type="text" id="noteTitle" class="form-input" placeholder="Misal: Feedback dari dr. Andi" required maxlength="120">
+        <label class="form-label" for="noteBody">Isi</label>
+        <textarea id="noteBody" class="form-textarea" rows="6" placeholder="Tulis catatan di sini..." required></textarea>
+        <div class="modal-actions">
+          <button type="button" class="btn-ghost" id="noteCancel">Batal</button>
+          <button type="submit" class="btn-primary">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Favorit modal -->
+  <div class="modal-overlay" id="favoritModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="favoritModalTitle">
+      <h3 class="modal-title" id="favoritModalTitle">Favorit</h3>
+      <div class="favorit-list" id="favoritList">
+        <p class="empty-state">Belum ada favorit. Klik ikon bintang pada link atau template untuk menyimpan.</p>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn-ghost" id="favoritClose">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Template preview modal (for long templates) -->
+  <div class="modal-overlay" id="templateModal" hidden>
+    <div class="modal modal-wide" role="dialog" aria-modal="true" aria-labelledby="templateModalTitle">
+      <h3 class="modal-title" id="templateModalTitle">Template</h3>
+      <pre class="template-preview" id="templatePreview"></pre>
+      <div class="modal-actions">
+        <button type="button" class="btn-ghost" id="templateClose">Tutup</button>
+        <button type="button" class="btn-primary" id="templateCopyBtn">Salin</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/bookmark.js"></script>
+  <script src="js/notes.js"></script>
+  <script src="js/profil.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

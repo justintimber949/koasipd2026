@@ -1,0 +1,270 @@
+{
+  "_comment": "7 DPJP + 2 template umum. Struktur: Zain/Anggaru/Astri punya 3 FU area (krisan-mawar-teratai, amarilis-cvcu, edelweis-icu-hcu) + naik/turun jaga + konsul. Abdur/Dyah/Iwal punya 1 FU all + naik/turun jaga + konsul. Ferdi: naik/turun jaga + konsul telepon.",
+
+  "dpjps": [
+    {
+      "id": "dr-zain",
+      "nama": "dr. Zainuddin, Sp. PD",
+      "spesialisasi": "Kepala Departemen IPD - Supervisor",
+      "wa": "082232789836",
+      "visite": "09.00-10.00 (sering); ±11.00 bila poli ramai, pernah sore = RANDOM",
+      "templates": [
+        {
+          "id": "zain-fu-krisan-mawar-teratai",
+          "scenario": "followup-krisan-mawar-teratai",
+          "judul": "Follow Up Krisan, Mawar, & Teratai",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Zainuddin, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan dokter, saya [NAMA_KOAS] ([PANGGILAN]) koas IPD mohon izin mengirimkan follow up harian pasien ruang Krisan, Mawar, dan Teratai per tanggal [TANGGAL] sebagai berikut:\n\n*Total Pasien: [JUMLAH] Pasien*\n=====================\n📌 KRISAN ([JUMLAH_KRISAN] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 MAWAR ([JUMLAH_MAWAR] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 TERATAI ([JUMLAH_TERATAI] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\nBerikut untuk foto CPPT sebagaimana terlampir di bawah ini dokter. Mohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "zain-fu-amarilis-cvcu",
+          "scenario": "followup-amarilis-cvcu",
+          "judul": "Follow Up Amarilis & CVCU",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Zainuddin, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan dokter, saya [NAMA_KOAS] ([PANGGILAN]) koas IPD mohon izin mengirimkan follow up harian pasien ruang Amarilis dan CVCU per tanggal [TANGGAL] sebagai berikut:\n\n*Total Pasien: [JUMLAH] Pasien*\n=====================\n📌 AMARILIS ([JUMLAH_AMARILIS] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n2. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 CVCU ([JUMLAH_CVCU] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\nBerikut untuk foto CPPT sebagaimana terlampir di bawah ini dokter. Mohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "zain-fu-edelweis-icu-hcu",
+          "scenario": "followup-edelweis-icu-hcu",
+          "judul": "Follow Up Edelweis, ICU, & HCU",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Zainuddin, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan dokter, saya [NAMA_KOAS] ([PANGGILAN]) koas IPD mohon izin mengirimkan follow up harian pasien ruang Edelweis, ICU, dan HCU per tanggal [TANGGAL] sebagai berikut:\n\n*Total Pasien: [JUMLAH] Pasien*\n=====================\n📌 EDELWEIS ([JUMLAH_EDELWEIS] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 ICU ([JUMLAH_ICU] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 HCU ([JUMLAH_HCU] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\nBerikut untuk foto CPPT sebagaimana terlampir di bawah ini dokter. Mohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "zain-naik-jaga",
+          "scenario": "naik-jaga",
+          "judul": "Naik jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Zainuddin, \n\nKoas jaga baru mulai shift:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\nRuang tugas: [RUANG]\n\nTelah menerima handover dari koas sebelumnya. Pasien yang sedang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n2. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n\nMohon arahan untuk yang perlu diwatch khusus. Terima kasih."
+        },
+        {
+          "id": "zain-turun-jaga",
+          "scenario": "turun-jaga",
+          "judul": "Turun jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Zainuddin, \n\nLaporan akhir shift jaga:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\n\nUpdate pasien yang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED]\n   Diagnosa: [DIAGNOSA]\n   Kondisi terakhir: [KONDISI]\n   Tindakan shift ini: [TINDAKAN]\n   Plan: [PLAN]\n\nHal yang perlu diperhatikan shift berikutnya:\n[CATATAN]\n\nTerima kasih."
+        },
+        {
+          "id": "zain-konsul",
+          "scenario": "konsul",
+          "judul": "Kirim konsul",
+          "isi": "Selamat [pagi/sore] dr. Zainuddin, \n\nMohon konsul untuk pasien:\n\nNama: [NAMA_PASIEN]\nNo. RM: [NO_RM]\nUmur/Seks: [UMUR]/[L/P]\nRuang: [RUANG]/[BED]\n\nDiagnosa kerja: [DX_KERJA]\nDiagnosa banding: [DX_BANDING]\n\nKeluhan utama: [KELUHAN]\n\nRiwayat penyakit:\n- DM: [YA/TIDAK]\n- HT: [YA/TIDAK]\n- Lainnya: [RIWAYAT]\n\nPemeriksaan fisik:\n- Kesadaran: [KESADARAN]\n- TD: [TD] mmHg, HR: [HR] x/min, RR: [RR] x/min, T: [TEMP]°C\n- Kepala-Thorax-Abdomen-Ekstremitas: [PF]\n\nPenunjang:\n- Lab: [LAB]\n- EKG: [EKG]\n- Radiologi: [RADIO]\n\nTerapi yang sudah diberikan: [TERAPI]\n\nPertanyaan konsul: [PERTANYAAN]\n\nTerima kasih."
+        }
+      ]
+    },
+    {
+      "id": "dr-ferdi",
+      "nama": "dr. Ferdi, Sp. PD",
+      "spesialisasi": "DPJP IPD - Operator Colon/Endoskopi",
+      "wa": "081333777148",
+      "visite": "06.00-07.00 (pernah 08.00), Sore konsul via TELEPON",
+      "templates": [
+        {
+          "id": "ferdi-naik-jaga",
+          "scenario": "naik-jaga",
+          "judul": "Naik jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Ferdi, \n\nKoas jaga baru mulai shift:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\nRuang tugas: [RUANG]\n\nTelah menerima handover dari koas sebelumnya. Pasien yang sedang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n2. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n\nMohon arahan untuk yang perlu diwatch khusus. Terima kasih."
+        },
+        {
+          "id": "ferdi-turun-jaga",
+          "scenario": "turun-jaga",
+          "judul": "Turun jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Ferdi, \n\nLaporan akhir shift jaga:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\n\nUpdate pasien yang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED]\n   Diagnosa: [DIAGNOSA]\n   Kondisi terakhir: [KONDISI]\n   Tindakan shift ini: [TINDAKAN]\n   Plan: [PLAN]\n\nHal yang perlu diperhatikan shift berikutnya:\n[CATATAN]\n\nTerima kasih."
+        },
+        {
+          "id": "ferdi-konsul",
+          "scenario": "konsul",
+          "judul": "Konsul (VIA TELEPON, bukan WA)",
+          "isi": "[PENTING] dr. Ferdi: konsul VIA TELEPON, bukan WA.\n\nSebelum telepon, siapkan data lengkap:\n\nNama: [NAMA_PASIEN]\nNo. RM: [NO_RM]\nUmur/Seks: [UMUR]/[L/P]\nRuang: [RUANG]/[BED]\n\nDiagnosa kerja: [DX_KERJA]\nDiagnosa banding: [DX_BANDING]\n\nKeluhan utama: [KELUHAN]\n\nRiwayat penyakit:\n- DM: [YA/TIDAK]\n- HT: [YA/TIDAK]\n- Lainnya: [RIWAYAT]\n\nPemeriksaan fisik:\n- Kesadaran: [KESADARAN]\n- TD: [TD] mmHg, HR: [HR] x/min, RR: [RR] x/min, T: [TEMP]°C\n\nPenunjang:\n- Lab: [LAB]\n- EKG: [EKG]\n- Radiologi: [RADIO]\n\nTerapi yang sudah diberikan: [TERAPI]\n\nPertanyaan konsul: [PERTANYAAN]\n\n[Setelah telepon: buat SO berdasarkan arahan beliau]"
+        }
+      ]
+    },
+    {
+      "id": "dr-dyah",
+      "nama": "dr. Dyah, Sp. PD",
+      "spesialisasi": "DPJP IPD",
+      "wa": "081332075650",
+      "visite": "Sering >12.00, bahkan sore 16.00-17.00; bisa pagi ±10.00; SERING JUGA TIDAK VISIT/NITIP VISIT",
+      "templates": [
+        {
+          "id": "dyah-fu-all",
+          "scenario": "followup-all",
+          "judul": "Follow Up Semua Pasien dr. Dyah",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Dyah, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan saya [NAMA_KOAS] ([PANGGILAN]) mohon izin mengirimkan list pasien per tanggal [TANGGAL] sebagai berikut:\n\nTOTAL PASIEN : [JUMLAH] PASIEN\n\n=======================\nKRISAN ([JML_KRISAN] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\nMAWAR ([JML_MAWAR] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\nTERATAI ([JML_TERATAI] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\nIGD ([JML_IGD] PASIEN)\n=======================\n\n=======================\nAMARILIS ([JML_AMARILIS] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\nCVCU ([JML_CVCU] PASIEN)\n=======================\n\n=======================\nMATAHARI ([JML_MATAHARI] PASIEN)\n=======================\n\n=======================\nSERUNI ([JML_SERUNI] PASIEN)\n=======================\n\n=======================\nEDELWEIS ([JML_EDELWEIS] PASIEN)\n=======================\n\n=======================\nORCHID ([JML_ORCHID] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\nHCU ([JML_HCU] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\nICU ([JML_ICU] PASIEN)\n=======================\n\n=======================\nVIP dan VVIP ([JML_VIP] PASIEN)\n=======================\n\nMohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "dyah-naik-jaga",
+          "scenario": "naik-jaga",
+          "judul": "Naik jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Dyah, \n\nKoas jaga baru mulai shift:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\nRuang tugas: [RUANG]\n\nTelah menerima handover dari koas sebelumnya. Pasien yang sedang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n2. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n\nMohon arahan untuk yang perlu diwatch khusus. Terima kasih."
+        },
+        {
+          "id": "dyah-turun-jaga",
+          "scenario": "turun-jaga",
+          "judul": "Turun jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Dyah, \n\nLaporan akhir shift jaga:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\n\nUpdate pasien yang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED]\n   Diagnosa: [DIAGNOSA]\n   Kondisi terakhir: [KONDISI]\n   Tindakan shift ini: [TINDAKAN]\n   Plan: [PLAN]\n\nHal yang perlu diperhatikan shift berikutnya:\n[CATATAN]\n\nTerima kasih."
+        },
+        {
+          "id": "dyah-konsul",
+          "scenario": "konsul",
+          "judul": "Kirim konsul",
+          "isi": "Selamat [pagi/sore] dr. Dyah, \n\nMohon konsul untuk pasien:\n\nNama: [NAMA_PASIEN]\nNo. RM: [NO_RM]\nUmur/Seks: [UMUR]/[L/P]\nRuang: [RUANG]/[BED]\n\nDiagnosa kerja: [DX_KERJA]\nDiagnosa banding: [DX_BANDING]\n\nKeluhan utama: [KELUHAN]\n\nRiwayat penyakit:\n- DM: [YA/TIDAK]\n- HT: [YA/TIDAK]\n- Lainnya: [RIWAYAT]\n\nPemeriksaan fisik:\n- Kesadaran: [KESADARAN]\n- TD: [TD] mmHg, HR: [HR] x/min, RR: [RR] x/min, T: [TEMP]°C\n- Kepala-Thorax-Abdomen-Ekstremitas: [PF]\n\nINPUT-OUTPUT CAIRAN:\n- Intake: [INTAKE] mL\n- Output: [OUTPUT] mL\n- Balance: [BALANCE] mL\n\nPenunjang:\n- Lab: [LAB]\n- EKG: [EKG]\n- Radiologi: [RADIO]\n\nTerapi yang sudah diberikan: [TERAPI]\n\nPertanyaan konsul: [PERTANYAAN]\n\nTerima kasih."
+        }
+      ]
+    },
+    {
+      "id": "dr-anggaru",
+      "nama": "dr. Anggaru, Sp. PD",
+      "spesialisasi": "DPJP IPD",
+      "wa": "08123353673",
+      "visite": "Sering ±10.00; hari tertentu bisa lebih pagi. Suka tentir dadakan",
+      "templates": [
+        {
+          "id": "anggaru-fu-krisan-mawar-teratai",
+          "scenario": "followup-krisan-mawar-teratai",
+          "judul": "Follow Up Krisan, Mawar, & Teratai",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Anggaru, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan dokter, saya [NAMA_KOAS] ([PANGGILAN]) koas IPD mohon izin mengirimkan follow up harian pasien ruang Krisan, Mawar, dan Teratai per tanggal [TANGGAL] sebagai berikut:\n\n*Total Pasien: [JUMLAH] Pasien*\n=====================\n📌 KRISAN ([JUMLAH_KRISAN] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 MAWAR ([JUMLAH_MAWAR] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 TERATAI ([JUMLAH_TERATAI] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\nBerikut untuk foto CPPT sebagaimana terlampir di bawah ini dokter. Mohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "anggaru-fu-amarilis-cvcu",
+          "scenario": "followup-amarilis-cvcu",
+          "judul": "Follow Up Amarilis & CVCU",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Anggaru, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan dokter, saya [NAMA_KOAS] ([PANGGILAN]) koas IPD mohon izin mengirimkan follow up harian pasien ruang Amarilis dan CVCU per tanggal [TANGGAL] sebagai berikut:\n\n*Total Pasien: [JUMLAH] Pasien*\n=====================\n📌 AMARILIS ([JUMLAH_AMARILIS] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n2. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 CVCU ([JUMLAH_CVCU] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\nBerikut untuk foto CPPT sebagaimana terlampir di bawah ini dokter. Mohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "anggaru-fu-edelweis-icu-hcu",
+          "scenario": "followup-edelweis-icu-hcu",
+          "judul": "Follow Up Edelweis, ICU, & HCU",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Anggaru, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan dokter, saya [NAMA_KOAS] ([PANGGILAN]) koas IPD mohon izin mengirimkan follow up harian pasien ruang Edelweis, ICU, dan HCU per tanggal [TANGGAL] sebagai berikut:\n\n*Total Pasien: [JUMLAH] Pasien*\n=====================\n📌 EDELWEIS ([JUMLAH_EDELWEIS] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 ICU ([JUMLAH_ICU] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 HCU ([JUMLAH_HCU] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\nBerikut untuk foto CPPT sebagaimana terlampir di bawah ini dokter. Mohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "anggaru-naik-jaga",
+          "scenario": "naik-jaga",
+          "judul": "Naik jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Anggaru, \n\nKoas jaga baru mulai shift:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\nRuang tugas: [RUANG]\n\nTelah menerima handover dari koas sebelumnya. Pasien yang sedang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n2. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n\nMohon arahan untuk yang perlu diwatch khusus. Terima kasih."
+        },
+        {
+          "id": "anggaru-turun-jaga",
+          "scenario": "turun-jaga",
+          "judul": "Turun jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Anggaru, \n\nLaporan akhir shift jaga:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\n\nUpdate pasien yang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED]\n   Diagnosa: [DIAGNOSA]\n   Kondisi terakhir: [KONDISI]\n   Tindakan shift ini: [TINDAKAN]\n   Plan: [PLAN]\n\nHal yang perlu diperhatikan shift berikutnya:\n[CATATAN]\n\nTerima kasih."
+        },
+        {
+          "id": "anggaru-konsul",
+          "scenario": "konsul",
+          "judul": "Kirim konsul",
+          "isi": "Selamat [pagi/sore] dr. Anggaru, \n\nMohon konsul untuk pasien:\n\nNama: [NAMA_PASIEN]\nNo. RM: [NO_RM]\nUmur/Seks: [UMUR]/[L/P]\nRuang: [RUANG]/[BED]\n\nDiagnosa kerja: [DX_KERJA]\nDiagnosa banding: [DX_BANDING]\n\nKeluhan utama: [KELUHAN]\n\nRiwayat penyakit:\n- DM: [YA/TIDAK]\n- HT: [YA/TIDAK]\n- Lainnya: [RIWAYAT]\n\nPemeriksaan fisik:\n- Kesadaran: [KESADARAN]\n- TD: [TD] mmHg, HR: [HR] x/min, RR: [RR] x/min, T: [TEMP]°C\n- Kepala-Thorax-Abdomen-Ekstremitas: [PF]\n\nPenunjang:\n- Lab: [LAB]\n- EKG: [EKG]\n- Radiologi: [RADIO]\n\nTerapi yang sudah diberikan: [TERAPI]\n\nPertanyaan konsul: [PERTANYAAN]\n\nTerima kasih."
+        }
+      ]
+    },
+    {
+      "id": "dr-iwal",
+      "nama": "dr. Iwal, Sp. PD",
+      "spesialisasi": "DPJP IPD - Pembimbing Referat",
+      "wa": "08123350882",
+      "visite": "Sesuai jadwal stase",
+      "templates": [
+        {
+          "id": "iwal-fu-all",
+          "scenario": "followup-all",
+          "judul": "Follow Up Semua Pasien dr. Iwal",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat Pagi dr. Iwal, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\nPerkenalkan saya, [NAMA_KOAS] ([PANGGILAN]) Mohon izin mengirimkan list pasien per tanggal [TANGGAL] sebagai berikut:\n\n*TOTAL PASIEN: [JUMLAH] Pasien*\n\n=======================\n*KRISAN ([JML_KRISAN] PASIEN)*\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n2. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n3. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\n*MAWAR ([JML_MAWAR] PASIEN)*\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n2. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n3. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\n*TERATAI ([JML_TERATAI] PASIEN)*\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n2. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\n*IGD ([JML_IGD] PASIEN)*\n=======================\n\n=======================\n*AMARILIS ([JML_AMARILIS] PASIEN)*\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n2. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n3. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\n*CVCU ([JML_CVCU] PASIEN)*\n=======================\n\n=======================\n*MATAHARI ([JML_MATAHARI] PASIEN)*\n=======================\n\n=======================\n*SERUNI ([JML_SERUNI] PASIEN)*\n=======================\n\n=======================\n*EDELWEIS ([JML_EDELWEIS] PASIEN)*\n=======================\n\n=======================\n*ORCHID ([JML_ORCHID] PASIEN)*\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n2. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\n*HCU ([JML_HCU] PASIEN)*\n=======================\n\n=======================\n*ICU ([JML_ICU] PASIEN)*\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n2. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\n*VIP DAN VVIP ([JML_VIP] PASIEN)*\n=======================\n\n\nTerima kasih banyak dokter. Mohon maaf apabila terdapat kesalahan 🙏🏻\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "iwal-naik-jaga",
+          "scenario": "naik-jaga",
+          "judul": "Naik jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Iwal, \n\nKoas jaga baru mulai shift:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\nRuang tugas: [RUANG]\n\nTelah menerima handover dari koas sebelumnya. Pasien yang sedang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n2. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n\nMohon arahan untuk yang perlu diwatch khusus. Terima kasih."
+        },
+        {
+          "id": "iwal-turun-jaga",
+          "scenario": "turun-jaga",
+          "judul": "Turun jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Iwal, \n\nLaporan akhir shift jaga:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\n\nUpdate pasien yang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED]\n   Diagnosa: [DIAGNOSA]\n   Kondisi terakhir: [KONDISI]\n   Tindakan shift ini: [TINDAKAN]\n   Plan: [PLAN]\n\nHal yang perlu diperhatikan shift berikutnya:\n[CATATAN]\n\nTerima kasih."
+        },
+        {
+          "id": "iwal-konsul",
+          "scenario": "konsul",
+          "judul": "Kirim konsul",
+          "isi": "Selamat [pagi/sore] dr. Iwal, \n\nMohon konsul untuk pasien:\n\nNama: [NAMA_PASIEN]\nNo. RM: [NO_RM]\nUmur/Seks: [UMUR]/[L/P]\nRuang: [RUANG]/[BED]\n\nDiagnosa kerja: [DX_KERJA]\nDiagnosa banding: [DX_BANDING]\n\nKeluhan utama: [KELUHAN]\n\nRiwayat penyakit:\n- DM: [YA/TIDAK]\n- HT: [YA/TIDAK]\n- Lainnya: [RIWAYAT]\n\nPemeriksaan fisik:\n- Kesadaran: [KESADARAN]\n- TD: [TD] mmHg, HR: [HR] x/min, RR: [RR] x/min, T: [TEMP]°C\n- Kepala-Thorax-Abdomen-Ekstremitas: [PF]\n\nPenunjang:\n- Lab: [LAB]\n- EKG: [EKG]\n- Radiologi: [RADIO]\n\nTerapi yang sudah diberikan: [TERAPI]\n\nPertanyaan konsul: [PERTANYAAN]\n\nTerima kasih."
+        }
+      ]
+    },
+    {
+      "id": "dr-abdur",
+      "nama": "dr. Abdur, Sp. PD",
+      "spesialisasi": "DPJP IPD",
+      "wa": "081805031737",
+      "visite": "Sesuai jadwal stase",
+      "templates": [
+        {
+          "id": "abdur-fu-all",
+          "scenario": "followup-all",
+          "judul": "Follow Up Semua Pasien dr. Abdur",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Abdur, Sp.PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan saya [NAMA_KOAS] ([PANGGILAN]) mohon izin mengirimkan list pasien per tanggal [TANGGAL] sebagai berikut:\n\nTOTAL PASIEN : [JUMLAH] PASIEN\n\n=======================\nKRISAN ([JML_KRISAN] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\n📍MAWAR ([JML_MAWAR] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\n📍TERATAI ([JML_TERATAI] PASIEN)\n=======================\n\n=======================\n📍IGD ([JML_IGD] PASIEN)\n=======================\n\n=======================\n📍AMARILIS ([JML_AMARILIS] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\nCVCU ([JML_CVCU] PASIEN)\n=======================\n\n=======================\nMATAHARI ([JML_MATAHARI] PASIEN)\n=======================\n\n=======================\nSERUNI ([JML_SERUNI] PASIEN)\n=======================\n\n=======================\nEDELWEIS ([JML_EDELWEIS] PASIEN)\n=======================\n\n=======================\n📍ORCHID ([JML_ORCHID] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n2. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=======================\n📍HCU ([JML_HCU] PASIEN)\n=======================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n======================\nICU ([JML_ICU] PASIEN)\n======================\n\n======================\nVIP dan VVIP ([JML_VIP] PASIEN)\n======================\n\nMohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "abdur-naik-jaga",
+          "scenario": "naik-jaga",
+          "judul": "Naik jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Abdur, \n\nKoas jaga baru mulai shift:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\nRuang tugas: [RUANG]\n\nTelah menerima handover dari koas sebelumnya. Pasien yang sedang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n2. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n\nMohon arahan untuk yang perlu diwatch khusus. Terima kasih."
+        },
+        {
+          "id": "abdur-turun-jaga",
+          "scenario": "turun-jaga",
+          "judul": "Turun jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Abdur, \n\nLaporan akhir shift jaga:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\n\nUpdate pasien yang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED]\n   Diagnosa: [DIAGNOSA]\n   Kondisi terakhir: [KONDISI]\n   Tindakan shift ini: [TINDAKAN]\n   Plan: [PLAN]\n\nHal yang perlu diperhatikan shift berikutnya:\n[CATATAN]\n\nTerima kasih."
+        },
+        {
+          "id": "abdur-konsul",
+          "scenario": "konsul",
+          "judul": "Konsul (SOAP via GRUP WA)",
+          "isi": "[PENTING] dr. Abdur: konsul dikirim via GRUP WA, format SOAP.\n\nS: [SUBJEKTIF - keluhan utama, riwayat]\nNama: [NAMA_PASIEN]\nNo. RM: [NO_RM]\nUmur/Seks: [UMUR]/[L/P]\nRuang: [RUANG]/[BED]\nKeluhan: [KELUHAN]\nRiwayat: DM [YA/TIDAK], HT [YA/TIDAK], lainnya [RIWAYAT]\n\nO: [OBJEKTIF - pemeriksaan fisik & penunjang]\nKesadaran: [KESADARAN]\nTD: [TD] mmHg, HR: [HR] x/min, RR: [RR] x/min, T: [TEMP]°C\nKepala-Thorax-Abdomen-Ekstremitas: [PF]\nLab: [LAB]\nEKG: [EKG]\nRadiologi: [RADIO]\n\nA: [ASESMEN]\nDiagnosa kerja: [DX_KERJA]\nDiagnosa banding: [DX_BANDING]\n\nP: [PLAN]\nTerapi yang sudah diberikan: [TERAPI]\nPertanyaan konsul: [PERTANYAAN]\n\n[Catatan: kirim di grup WA, bukan WA pribadi]"
+        }
+      ]
+    },
+    {
+      "id": "dr-astri",
+      "nama": "dr. Astri, Sp. PD",
+      "spesialisasi": "DPJP IPD",
+      "wa": "08125268671",
+      "visite": "≥11.00, pernah 14.00-15.00, pagi jam 09.00",
+      "templates": [
+        {
+          "id": "astri-fu-krisan-mawar-teratai",
+          "scenario": "followup-krisan-mawar-teratai",
+          "judul": "Follow Up Krisan, Mawar, & Teratai",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Astri, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan dokter, saya [NAMA_KOAS] ([PANGGILAN]) koas IPD mohon izin mengirimkan follow up harian pasien ruang Krisan, Mawar, dan Teratai per tanggal [TANGGAL] sebagai berikut:\n\n*Total Pasien: [JUMLAH] Pasien*\n=====================\n📌 KRISAN ([JUMLAH_KRISAN] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 MAWAR ([JUMLAH_MAWAR] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 TERATAI ([JUMLAH_TERATAI] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\nBerikut untuk foto CPPT sebagaimana terlampir di bawah ini dokter. Mohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "astri-fu-amarilis-cvcu",
+          "scenario": "followup-amarilis-cvcu",
+          "judul": "Follow Up Amarilis & CVCU",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Astri, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan dokter, saya [NAMA_KOAS] ([PANGGILAN]) koas IPD mohon izin mengirimkan follow up harian pasien ruang Amarilis dan CVCU per tanggal [TANGGAL] sebagai berikut:\n\n*Total Pasien: [JUMLAH] Pasien*\n=====================\n📌 AMARILIS ([JUMLAH_AMARILIS] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n2. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 CVCU ([JUMLAH_CVCU] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\nBerikut untuk foto CPPT sebagaimana terlampir di bawah ini dokter. Mohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "astri-fu-edelweis-icu-hcu",
+          "scenario": "followup-edelweis-icu-hcu",
+          "judul": "Follow Up Edelweis, ICU, & HCU",
+          "isi": "Assalamualaikum Wr. Wb.\n\nSelamat pagi dr. Astri, Sp. PD. Mohon maaf mengganggu waktunya dokter 🙏🏻\n\nPerkenalkan dokter, saya [NAMA_KOAS] ([PANGGILAN]) koas IPD mohon izin mengirimkan follow up harian pasien ruang Edelweis, ICU, dan HCU per tanggal [TANGGAL] sebagai berikut:\n\n*Total Pasien: [JUMLAH] Pasien*\n=====================\n📌 EDELWEIS ([JUMLAH_EDELWEIS] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 ICU ([JUMLAH_ICU] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\n=====================\n📌 HCU ([JUMLAH_HCU] PASIEN)\n=====================\n1. [NAMA_PASIEN]/[RUANG_BED]/[DIAGNOSA]/[DPJP] ([OB])\n\nBerikut untuk foto CPPT sebagaimana terlampir di bawah ini dokter. Mohon maaf apabila terdapat kesalahan 🙏🏻\nTerimakasih banyak dokter 🙏🏻\n\nWassalamualaikum Wr. Wb."
+        },
+        {
+          "id": "astri-naik-jaga",
+          "scenario": "naik-jaga",
+          "judul": "Naik jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Astri, \n\nKoas jaga baru mulai shift:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\nRuang tugas: [RUANG]\n\nTelah menerima handover dari koas sebelumnya. Pasien yang sedang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n2. [NAMA_PASIEN] - [RUANG]/[BED] - [DIAGNOSA] - status: [STABIL/WATCHER/UNSTABIL]\n\nMohon arahan untuk yang perlu diwatch khusus. Terima kasih."
+        },
+        {
+          "id": "astri-turun-jaga",
+          "scenario": "turun-jaga",
+          "judul": "Turun jaga",
+          "isi": "Selamat [pagi/sore/malam] dr. Astri, \n\nLaporan akhir shift jaga:\n\nNama: [NAMA_KOAS]\nShift: [PAGI/SORE/MALAM]\nTanggal: [TANGGAL]\n\nUpdate pasien yang diawasi:\n\n1. [NAMA_PASIEN] - [RUANG]/[BED]\n   Diagnosa: [DIAGNOSA]\n   Kondisi terakhir: [KONDISI]\n   Tindakan shift ini: [TINDAKAN]\n   Plan: [PLAN]\n\nHal yang perlu diperhatikan shift berikutnya:\n[CATATAN]\n\nTerima kasih."
+        },
+        {
+          "id": "astri-konsul",
+          "scenario": "konsul",
+          "judul": "Kirim konsul",
+          "isi": "Selamat [pagi/sore] dr. Astri, \n\nMohon konsul untuk pasien:\n\nNama: [NAMA_PASIEN]\nNo. RM: [NO_RM]\nUmur/Seks: [UMUR]/[L/P]\nRuang: [RUANG]/[BED]\n\nDiagnosa kerja: [DX_KERJA]\nDiagnosa banding: [DX_BANDING]\n\nKeluhan utama: [KELUHAN]\n\nRiwayat penyakit:\n- DM: [YA/TIDAK]\n- HT: [YA/TIDAK]\n- Lainnya: [RIWAYAT]\n\nPemeriksaan fisik:\n- Kesadaran: [KESADARAN]\n- TD: [TD] mmHg, HR: [HR] x/min, RR: [RR] x/min, T: [TEMP]°C\n- Kepala-Thorax-Abdomen-Ekstremitas: [PF]\n\nPenunjang:\n- Lab: [LAB]\n- EKG: [EKG]\n- Radiologi: [RADIO]\n\nTerapi yang sudah diberikan: [TERAPI]\n\nPertanyaan konsul: [PERTANYAAN]\n\nTerima kasih."
+        }
+      ]
+    }
+  ],
+
+  "_comment_templateUmum": "Template umum - tidak terikat DPJP spesifik. Bisa dipakai siapa pun sesuai area jaga.",
+  "templateUmum": []
+}

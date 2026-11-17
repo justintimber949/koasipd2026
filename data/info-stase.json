@@ -1,0 +1,244 @@
+{
+  "_comment": "Aturan dan info penting selama stase IPD. Diambil dari INTERNA ROTATION GUIDE.",
+
+  "kontakPenting": [
+    {
+      "nama": "dr. Zainuddin, Sp. PD",
+      "peran": "Kepala Departemen IPD / Supervisor",
+      "kontak": "082232789836"
+    },
+    {
+      "nama": "Bu Luluk",
+      "peran": "Admin Kordik",
+      "kontak": "085895659904"
+    },
+    {
+      "nama": "dr. Ferdi, Sp. PD",
+      "peran": "DPJP - Operator Colon/Endoskopi",
+      "kontak": "081333777148"
+    },
+    {
+      "nama": "dr. Dyah, Sp. PD",
+      "peran": "DPJP IPD",
+      "kontak": "081332075650"
+    },
+    {
+      "nama": "dr. Anggaru, Sp. PD",
+      "peran": "DPJP IPD",
+      "kontak": "08123353673"
+    },
+    {
+      "nama": "dr. Iwal, Sp. PD",
+      "peran": "DPJP IPD - Pembimbing Referat",
+      "kontak": "08123350882"
+    },
+    {
+      "nama": "dr. Abdur, Sp. PD",
+      "peran": "DPJP IPD",
+      "kontak": "081805031737"
+    },
+    {
+      "nama": "dr. Astri, Sp. PD",
+      "peran": "DPJP IPD",
+      "kontak": "08125268671"
+    }
+  ],
+
+  "jadwalStase": [
+    {
+      "judul": "Ruangan (Senin-Jumat)",
+      "isi": "05.00-14.00"
+    },
+    {
+      "judul": "Ruangan (Sabtu)",
+      "isi": "05.00-11.00"
+    },
+    {
+      "judul": "Poli (Senin-Jumat)",
+      "isi": "07.00-selesai"
+    },
+    {
+      "judul": "Total durasi stase",
+      "isi": "8 Minggu"
+    }
+  ],
+
+  "jadwalJaga": [
+    {
+      "judul": "Jaga Weekday (Senin-Jumat)",
+      "isi": "14.00-06.00"
+    },
+    {
+      "judul": "Jaga Weekend Sabtu",
+      "isi": "11.00-06.00"
+    },
+    {
+      "judul": "Jaga Weekend Minggu (24 jam)",
+      "isi": "06.00-06.00"
+    },
+    {
+      "judul": "Sistem jaga",
+      "isi": "2 orang (1 senior + 1 junior). Minggu 4 senior free jaga, jadi 2 junior, no oncall"
+    }
+  ],
+
+  "workflowHarian": [
+    {
+      "jam": "04.30-05.00",
+      "aktivitas": "Konruan ↔ ruangan sesuai pembagian untuk semua pasien"
+    },
+    {
+      "jam": "05.00-08.00",
+      "aktivitas": "Datang, bagi pasien, assessment pasien, buat CPPT"
+    },
+    {
+      "jam": "MAKS 08.00",
+      "aktivitas": "Kirim CPPT ke WA DPJP (yang ngirim dibagi per ruang)"
+    },
+    {
+      "jam": "s/d 14.00",
+      "aktivitas": "Visite / MR / ujian - tunggu semua dokter selesai visite (jam 14.00 pulang)"
+    },
+    {
+      "jam": "14.00",
+      "aktivitas": "Follow up pasien SEBELUM pulang. FU ke: dr. Zainuddin, dr. Astri, dr. Anggaru, dr. Abdur"
+    },
+    {
+      "jam": "Pulang",
+      "aktivitas": "Jam 14.00 = pulang, JANGAN langsung turun stase"
+    }
+  ],
+
+  "aturanPenting": [
+    {
+      "judul": "CPPT WAJIB DI TTD",
+      "isi": "CPPT harus ditandatangan. Jika izin meninggalkan ruangan, CPPT dititipkan ke koas LAIN, dan tetap kabar (jangan menghilang)."
+    },
+    {
+      "judul": "CPPT TIDAK dikirim via WA untuk dr. Ferdi & dr. Iwal",
+      "isi": "Kecuali dr. Ferdi: tambahan konsul via telepon."
+    },
+    {
+      "judul": "Follow up pasien sebelum pulang (jam 14.00)",
+      "isi": "FU pasien DPJP: dr. Zainuddin (DOKZEN), dr. Astri (DOKAST), dr. Anggaru (DOKANG), dr. Abdur (DOKDUR)."
+    },
+    {
+      "judul": "Pasien dr. Abdur (DOKDUR)",
+      "isi": "Kirim FU di grup. Yang mengirim = yang bertugas mengirim CPPT paginya."
+    },
+    {
+      "judul": "Pasien pulang saat jam jaga",
+      "isi": "Lapor ke dokternya saat kirim FU."
+    },
+    {
+      "judul": "Pasien dr. Zainuddin (DOKZEN) - OB IGD",
+      "isi": "Jika ada OB IGD dan masuk ruangan di jam stase, lapor dan bisa dibuat POMR atas seizin DPJP (KECUALI dr. Ferdi)."
+    },
+    {
+      "judul": "Konsulan ruangan di jam stase",
+      "isi": "Px dr. Zainuddin: buat CPPT & lapor & kirim ke beliau. Selain dr. Zainuddin: buat CPPT & lapor saat visite, CPPT dikirim ke grup kita sendiri. Lapor ke anak jaga jika ada konsulan."
+    },
+    {
+      "judul": "Pasien MENINGGAL",
+      "isi": "Dilaporkan ke DPJP-nya. dr. Zainuddin (DOKZEN) WAJIB dilapor. Yang lain lihat situasi & kondisi."
+    },
+    {
+      "judul": "Pasien kritis selama stase",
+      "isi": "Operan sama yang JAGA untuk diobservasi dan laporan ke DPJP."
+    },
+    {
+      "judul": "Pasien pindah ruangan",
+      "isi": "Jika px ruang A pindah ruang B: CPPT dioperin. Px dr. Zainuddin: CPPT difoto dari awal (kalau udh ganti kertas)."
+    },
+    {
+      "judul": "KONRU OFFLINE",
+      "isi": "Amarilis, Edelweis, VIP. WALAUPUN Amarilis ada handover-nya, tetap cek offline."
+    },
+    {
+      "judul": "Ilmiah di jam stase",
+      "isi": "Izin ke perawat ruangan. Kalau di ruangan lagi ada visite DPJP, izin langsung."
+    },
+    {
+      "judul": "Tensi pasien (opsional)",
+      "isi": "Sesuai kata hati masing-masing. Kalau bisa, tensi px-nya dan izin/lapor ke perawat. Tensi perawat update di ERM sekitar jam 6-7. Tanya px: pagi ini sudah ditensi/belum?"
+    },
+    {
+      "judul": "Grup WhatsApp",
+      "isi": "Grup DOKDUR: kirim CPPT, FU, konsul jaga, PR."
+    }
+  ],
+
+  "aturanJaga": [
+    {
+      "judul": "Konsul pasien",
+      "isi": "Sesuai DPJP jaga aja. Jam konsul ke DPJP IPD yang dihitung OB (bukan jam datang ke IGD)."
+    },
+    {
+      "judul": "Cara kirim SO/SOAP",
+      "isi": "Semua DPJP via WA pribadi, KECUALI:\n- dr. Abdur: SOAP via GRUP WA, konsulan dikirim di grup\n- dr. Ferdi: VIA TELEPON"
+    },
+    {
+      "judul": "Chat naik & turun jaga",
+      "isi": "Tunggu ada beberapa OB. dr. Ferdi: telepon dulu untuk lapor ada beberapa pasien dengan dx, beliau akan pilih px untuk POMR. POMR langsung dikerjakan, besoknya ditagih untuk diskusi."
+    },
+    {
+      "judul": "Hal WAJIB dikomunikasikan",
+      "isi": "Chat naik & turun jaga, minta pasien MR, konruan, kirim tiap naik & turun jaga."
+    },
+    {
+      "judul": "Pasien dr. Iwal saat turun jaga",
+      "isi": "Kirim daftar pasien beliau setiap turun jaga. Sampaikan sekaligus saat chat turun jaga. Kalau ada pasien meninggal, juga dilaporkan."
+    },
+    {
+      "judul": "Minta MR ke DPJP yang jaga awal",
+      "isi": "Minta MR ke DPJP yang jaga awal saat naik jaga."
+    },
+    {
+      "judul": "Durante op (colon/endoskopi)",
+      "isi": "Operator: dr. Ferdi. Asistensi: junior (jadwal pagi jam 06.00 atau sore jam 15.00). Asistensi non-steril - cuma megangin pasien. Boleh ajak diskusi kasus kalau ditanya."
+    },
+    {
+      "judul": "Saat jaga",
+      "isi": "Ikut visite dokter & input resep bila diminta."
+    }
+  ],
+
+  "syaratKelulusan": [
+    {
+      "judul": "POMR",
+      "isi": "Minimal 10 POMR selama stase. WAJIB TTD DPJP + stempel. POMR dr. Zainuddin & dr. Iwal: kasus harus beda. POMR dr. Astri: boleh sama. POMR dr. Abdur: yang di MR kan tambahan. Pengumpulan per minggu, soft & hardfile, belum TTD = soft file dulu."
+    },
+    {
+      "judul": "Journal Reading",
+      "isi": "Per individu. Dokter penguji sesuai pembagian kordik. Ajukan beberapa jurnal, dokter pilih. Konsul PPT, ACC baru maju. Waktu: minggu ke-3 atau bulan ke-2 (paling aman). dr. Zainuddin: junior BISA ujian Jurding WAJIB. PPT di-print, dikumpulkan maks H-1 sebelum maju."
+    },
+    {
+      "judul": "Referat & Refkas",
+      "isi": "1 kelompok = 1 referat. Pembimbing dari kordik: dr. Iwal. Minggu 2-3 dr. Iwal beri topik. Maju minggu junior, kalau bisa awal senior. Refkas per anak 1: pilih pasien bebas, file dikirim ke beliau via email."
+    },
+    {
+      "judul": "Mini-CEX",
+      "isi": "2x. Ajukan pasien ke dokter penguji."
+    },
+    {
+      "judul": "DOPS",
+      "isi": "2x. Pilihan tindakan: pasang kateter, pasang infus, pungsi asites, pasang NGT."
+    },
+    {
+      "judul": "OSLER",
+      "isi": "1x. Ajukan pasien ke dokter penguji."
+    },
+    {
+      "judul": "Syarat ujian",
+      "isi": "Minggu 4 junior hari Jumat: kumpulkan logbook yang sudah diisi. Minggu 4: junior ke senior kirim rekapan kasus dan skill ke dr. Zainuddin."
+    }
+  ],
+
+  "referensi": [
+    { "judul": "KDIGO", "untuk": "Ginjal" },
+    { "judul": "ADA", "untuk": "Krisis Hiperglikemia" },
+    { "judul": "PERKENI", "untuk": "DM" },
+    { "judul": "Harrison's Internal Medicine", "untuk": "Referensi utama" },
+    { "judul": "PAPDI Jilid 6", "untuk": "Referensi utama" }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "_comment": "Link ruangan & handover. Struktur: KONRU (1 link spesial) → 3 group handover (Gedung Lama, Gedung Baru, + link yang sudah ada per ruangan). Orchid TIDAK di-lock karena sudah ada linknya.",
+
+  "konruDoc": [
+    {
+      "id": "konru",
+      "judul": "KONRU",
+      "keterangan": "Panduan konsul ruangan",
+      "url": "https://docs.google.com/document/d/1-UA7rEo3dM9X_gqE92CFACPQPwQrOSbufDQuclX0m-w/edit?usp=sharing"
+    }
+  ],
+
+  "gedung": [
+    {
+      "nama": "Gedung Lama",
+      "ruangan": [
+        {
+          "id": "krisan",
+          "judul": "Krisan",
+          "keterangan": "Spreadsheet pasien Krisan",
+          "url": "https://docs.google.com/spreadsheets/d/1oIpWRm3x8US4j6wXrpBzp5kS66yYOnrIJtfkT-h4D2Y/edit?gid=679146689#gid=679146689"
+        },
+        {
+          "id": "mawar",
+          "judul": "Mawar",
+          "keterangan": "Spreadsheet pasien Mawar",
+          "url": "https://docs.google.com/spreadsheets/d/1TXVgltEGoL-JKjJJ7lQn-A_bwmxl_-ny_EwDvAqZKgo/edit?usp=sharing"
+        },
+        {
+          "id": "teratai",
+          "judul": "Teratai",
+          "keterangan": "Spreadsheet pasien Teratai",
+          "url": "https://docs.google.com/spreadsheets/d/1CgaxzgW1MCpkRIDesx5f_IJil8tqEaMVFsfJnMimMiA/edit?usp=drivesdk"
+        }
+      ]
+    },
+    {
+      "nama": "Gedung Baru",
+      "ruangan": [
+        {
+          "id": "igd",
+          "judul": "IGD",
+          "keterangan": "Belum ada link",
+          "locked": true
+        },
+        {
+          "id": "amarilis",
+          "judul": "Amarilis",
+          "keterangan": "Spreadsheet pasien Amarilis",
+          "url": "https://docs.google.com/spreadsheets/d/1zhBiBXm2Sa7EMCrkAG4wm1z2YYcRY9YJ3ht4riLaGXk/edit?gid=1295382239#gid=1295382239"
+        },
+        {
+          "id": "cvcu",
+          "judul": "CVCU",
+          "keterangan": "Spreadsheet pasien CVCU",
+          "url": "https://docs.google.com/spreadsheets/d/1eUUmzbsUB9-DNrtPzO7Ua5WOJbL9kGonrZvSr6R-KPo/edit?gid=1307285752#gid=1307285752"
+        },
+        {
+          "id": "matahari",
+          "judul": "Matahari",
+          "keterangan": "Handover KABER",
+          "url": "https://docs.google.com/spreadsheets/d/14fCPI78k5C-bP-KjbQ8NK7OeLeSMJLbNPpqlkHDDHyU/edit?usp=sharing"
+        },
+        {
+          "id": "seruni",
+          "judul": "Seruni",
+          "keterangan": "Spreadsheet pasien Seruni",
+          "url": "https://docs.google.com/spreadsheets/d/1B5QxnAxp_VfbQOelP6hR_-bM7suSpDQCNYPfc6YIncA/edit?gid=969324664#gid=969324664"
+        },
+        {
+          "id": "perina",
+          "judul": "Perina",
+          "keterangan": "Spreadsheet pasien Perina",
+          "url": "https://docs.google.com/spreadsheets/d/1Cnco3N3y-TcmSVxGBpnjNjXiwJ_UZ6cgo0DnG7ZFfaw/edit?pli=1&gid=111509385#gid=111509385"
+        },
+        {
+          "id": "edelweis",
+          "judul": "Edelweis",
+          "keterangan": "Akses terkunci",
+          "locked": true
+        },
+        {
+          "id": "orchid",
+          "judul": "Orchid",
+          "keterangan": "Spreadsheet pasien Orchid",
+          "url": "https://docs.google.com/spreadsheets/d/10_J5vDLqEPu2-6QY7LNxGlj_gcmtbf50dQysGTRcL9U/edit?usp=sharing"
+        },
+        {
+          "id": "hcu",
+          "judul": "HCU",
+          "keterangan": "Spreadsheet pasien HCU",
+          "url": "https://docs.google.com/spreadsheets/d/1Nboj1IEmQWZCtNNKh7A_nIfJtGJY6cKKAlcrLNfqlhY/edit?gid=721913049#gid=721913049"
+        },
+        {
+          "id": "icu",
+          "judul": "ICU",
+          "keterangan": "Spreadsheet pasien ICU",
+          "url": "https://docs.google.com/spreadsheets/d/12UEUalsqN2k_wd0jCdOZzcvJcopkTQdaDEQMIN5O_xQ/edit?gid=579284693#gid=579284693"
+        },
+        {
+          "id": "vip-vvip",
+          "judul": "VIP dan VVIP",
+          "keterangan": "Belum ada link",
+          "locked": true
+        }
+      ]
+    }
+  ]
+}

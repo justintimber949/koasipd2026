@@ -1,0 +1,27 @@
+{
+  "_comment": "Jadwal ditampilkan sebagai gambar PNG. Letakkan file PNG di folder 'assets/' dan tulis path relatif-nya di sini. Update file ini tiap kali jadwal bulan baru keluar.",
+
+  "jaga": [
+    {
+      "judul": "Jadwal Jaga - [Bulan/Tahun]",
+      "keterangan": "Update terakhir: [tanggal]",
+      "path": "assets/jadwal-jaga.png"
+    }
+  ],
+
+  "stase": [
+    {
+      "judul": "Jadwal Stase IPD",
+      "keterangan": "Rotasi modul selama stase",
+      "path": "assets/jadwal-stase.png"
+    }
+  ],
+
+  "chatDosen": [
+    {
+      "judul": "Jadwal Chat Dosen",
+      "keterangan": "Jadwal case discussion dengan dosen pembimbing",
+      "path": "assets/jadwal-chat-dosen.png"
+    }
+  ]
+}
